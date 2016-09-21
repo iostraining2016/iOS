@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349BC35F1D849F0D002429B0 /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349BC35E1D849F0D002429B0 /* customTableViewCell.swift */; };
+		34A76EAE1D84AC4E00021689 /* CustomTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A76EAD1D84AC4E00021689 /* CustomTextViewController.swift */; };
 		34CA94EC1D8498230072609F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA94EB1D8498230072609F /* AppDelegate.swift */; };
 		34CA94EE1D8498230072609F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA94ED1D8498230072609F /* ViewController.swift */; };
 		34CA94F11D8498230072609F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CA94EF1D8498230072609F /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		349BC35E1D849F0D002429B0 /* customTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = customTableViewCell.swift; path = Custom/customTableViewCell.swift; sourceTree = "<group>"; };
+		34A76EAD1D84AC4E00021689 /* CustomTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextViewController.swift; path = Custom/CustomTextViewController.swift; sourceTree = "<group>"; };
 		34CA94E81D8498230072609F /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CA94EB1D8498230072609F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34CA94ED1D8498230072609F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		349BC3601D849F74002429B0 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				34A76EAD1D84AC4E00021689 /* CustomTextViewController.swift */,
+				349BC35E1D849F0D002429B0 /* customTableViewCell.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
 		34CA94DF1D8498230072609F = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +67,7 @@
 		34CA94EA1D8498230072609F /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				349BC3601D849F74002429B0 /* Custom */,
 				34CA94EB1D8498230072609F /* AppDelegate.swift */,
 				34CA94ED1D8498230072609F /* ViewController.swift */,
 				34CA94EF1D8498230072609F /* Main.storyboard */,
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A76EAE1D84AC4E00021689 /* CustomTextViewController.swift in Sources */,
 				34CA94EE1D8498230072609F /* ViewController.swift in Sources */,
 				34CA94EC1D8498230072609F /* AppDelegate.swift in Sources */,
+				349BC35F1D849F0D002429B0 /* customTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +304,7 @@
 				34CA94FC1D8498230072609F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
