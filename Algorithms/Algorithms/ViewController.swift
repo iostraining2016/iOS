@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var myTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +25,11 @@ class ViewController: UIViewController {
 
 
     @IBAction func go(sender: AnyObject) {
-        var array: [[Int]] = [[1,0,0],[1,0,1],[0,0,1]]
+        var array: [[Int]] = [
+             [1,0,0]
+            ,[1,0,1]
+            ,[0,0,1]
+        ]
         
         print(find(&array))
         
@@ -65,6 +71,31 @@ class ViewController: UIViewController {
             mark(&array, i:i-1,j: j+1) //upper right
         }
     
+    }
+    
+    @IBAction func countChars(sender: AnyObject) {
+        var entry : String
+        entry = self.myTextField.text!
+        var data : [Character: Int] = [:]
+        
+        for i in entry.characters {
+            var charCount = data[i]
+            var count : Int
+            count = 0
+            if charCount == nil {
+                count = 1;
+            } else {
+                count = charCount! as Int
+                count += 1
+            }
+            charCount = count
+            data[i] = charCount
+        }
+        
+        for (char, count) in data {
+            print("Char \(char) is repeated: \(count) times")
+        }
+        
     }
     
 }

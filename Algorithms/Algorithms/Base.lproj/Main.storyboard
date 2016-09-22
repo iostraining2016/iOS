@@ -18,19 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0it-L8-g8k">
-                                <rect key="frame" x="145" y="59" width="30" height="30"/>
-                                <state key="normal" title="Go"/>
+                                <rect key="frame" x="119" y="59" width="83" height="30"/>
+                                <state key="normal" title="Islands - Go"/>
                                 <connections>
                                     <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esj-CU-dfV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnm-9t-Xzx">
+                                <rect key="frame" x="107" y="207" width="106" height="30"/>
+                                <state key="normal" title="Find chars - Go"/>
+                                <connections>
+                                    <action selector="countChars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fP2-lv-Nai"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="84S-bX-hX9">
+                                <rect key="frame" x="20" y="175" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="myTextField" destination="84S-bX-hX9" id="M0h-Zh-6NU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="189"/>
         </scene>
     </scenes>
 </document>
